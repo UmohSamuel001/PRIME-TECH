@@ -2,11 +2,11 @@ var header = document.getElementById('header');
 var scrollBtn = document.getElementById('scroll-btn');
 
 
-// When the user scrolls down 3000px from the top of the document, show the button
+// When the user scrolls down 100px from the top of the document, show the color
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         header.style.backgroundColor = "#071903";
     } else {
         header.style.backgroundColor = "transparent";
