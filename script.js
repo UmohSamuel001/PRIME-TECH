@@ -4,7 +4,7 @@ var header = document.getElementById('header');
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-if (document.body.scrollTop > 650 || document.documentElement.scrollTop > 650) {
+if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
 header.style.backgroundColor = "#071903";
 } else {
 header.style.backgroundColor = "transparent";

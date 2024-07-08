@@ -1,0 +1,88 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+.offcanvas-body {
+  /* scroll-behavior: smooth;
+  scrollbar-width: thin; */
+  width: 300px !important;
+  height: auto;
+  position: fixed;
+  overflow-y: scroll;
+  background-color: aquamarine;
+}
+.sidenav-nav {
+    position: relative;
+    z-index: 1;
+    margin: 1.5rem 0;
+}
+.sidenav-nav li a {
+    position: relative;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #8480ae;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .sidenav-nav li a i {
+    margin-right: 0.75rem;
+    font-size: 18px;
+  }
+  .sidenav-nav li a:hover {
+    color: #020b59;
+    background-color: #f1f2fb;
+  }
+  .sidenav-nav li .night-mode-nav {
+    -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .sidenav-nav li .night-mode-nav .form-check {
+    padding-top: 0.25rem;
+    min-height: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+  }
+  .sidenav-nav li .night-mode-nav .form-check input {
+    margin: 0;
+  }
+  .sidenav-nav li .night-mode-nav i {
+    margin-right: 0.75rem;
+    font-size: 18px;
+  }
+  .sidenav-nav li .night-mode-nav:hover {
+    color: #020b59;
+    background-color: #f1f2fb;
+  }
+  .sidenav-nav li ul {
+    display: none;
+    background-color: #f1f2fb;
+    padding-bottom: 0.75rem;
+  }
+  .sidenav-nav li ul li a {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  

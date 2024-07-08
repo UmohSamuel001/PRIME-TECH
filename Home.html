@@ -16,7 +16,19 @@
     <script src="https://kit.fontawesome.com/a207e207d8.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- endbuild -->
-
+    <style>
+        .ad {
+            width: 85% !important;
+        }
+        @media screen and (max-width: 767px) {
+            .hm-affiliate-hero-left {
+                margin-top: 80px !important;
+            }
+            .ad {
+                width: 100% !important;
+            }
+        }
+    </style>
 </head>
 
 <body aria-hidden="false">
@@ -33,11 +45,12 @@
     <div class="main-wrapper" style="height: auto !important;">
         <div class="mobile-menu position-fixed bg-white deep-shadow">
             <button class="close-menu position-absolute"><i class="fa-solid fa-xmark"></i></button>
-            <a href="Home.html" class="logo-wrapper"><img src="img/logo (3).png" style="height: 90px; width: 110px;" alt="logo" class="logo logo-black"></a>
+            <div class="d-flex align-items-center justify-content-center">
+                <a href="Home.html" class="logo-wrapper"><img src="img/logo (3).png" style="height: 90px; width: 100px;" alt="logo" class="logo logo-black"></a>
+            </div>
             <nav class="mobile-menu-wrapper mt-15">
                 <ul>
-                    <li><a href="/">Home</a>
-                    </li>
+                    <li><a href="Home.html">Home</a></li>
                     <li><a href="Terms.html">About Vertexx</a></li>
                     <li><a href="Buy Coupon Code.html">Buy Coupon</a></li>
                     <li><a href="Top Earners.html">Top Earners</a></li>
@@ -47,15 +60,14 @@
                     <li><a href="#">Vertexx Freelencing</a></li>
                     <li><a href="Terms.html">Terms</a></li>
                     <li><a href="Policy.html">Policy</a></li>
-                    
-                                        <li><a href="Login.html">Login</a></li>
+                    <li><a href="Login.html">Login</a></li>
                     <li><a href="Register.html">Register</a></li>
                 </ul>
             </nav>
         </div>
                 
 
-        <section class="hm-affiliate-hero bg-warning-gradient overflow-hidden ptb-120" style="height: auto !important;">
+        <section class="hm-affiliate-hero bg-warning-gradient overflow-hidden ptb-80" style="height: auto !important;">
             <header class="header-style-4 sticky-header" id="header">
                 <div class="container">
                     <div class="row align-items-center navbar">
@@ -153,14 +165,14 @@
                     <div class="row align-items-center">
                         <div class="col-lg-6 col-md-10">
                             <div class="feature-img">
-                                <img src="img/earning.jpeg" alt="server" class="img-fluid rounded w-75">
+                                <img src="img/earning.jpeg" alt="server" class="img-fluid ad rounded">
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-11">
                             <div class="content-wrapper mt-5 mt-lg-0">
                                 <h3 class="mb-3 text-dark">Empower Your Earning Journey with Prime-tech:</h3>
                                 <p class="mb-40">Discover a world of boundless earning possibilities at Prime-tech. With our unique 3 Level Affiliate System and a diverse array of tasks, we offer unmatched avenues for you to thrive. Seamlessly convert your dedication into tangible rewards through our transparent payout process. Join a vibrant community of collaborators who share your ambition, and access valuable resources to enhance your earning potential. Elevate your earnings with Prime-tech – where opportunity, empowerment, and prosperity unite.</p>
-                                <a href="/user-login" class="template-btn primary-btn">Login Now</a>
+                                <a href="Login.html" class="template-btn primary-btn">Login Now</a>
                             </div>
                         </div>
                     </div>
@@ -279,7 +291,7 @@
                             <div class="aff-ft-support-left pt-70 pb-70">
                                 <h2 class="text-white mb-3">Need Assistance? Our Support Team is Here to Help!</h2>
                                 <p class="mb-40">Whether you have questions about tasks, payouts, or navigating the platform, our dedicated support team is ready to assist you. We're here to ensure your Prime-tech experience is smooth and rewarding. Contact us for prompt and friendly support.</p>
-                                <a href="/user-login" class="template-btn primary-btn">Join Community</a>
+                                <a href="Login.html" class="template-btn primary-btn">Join Community</a>
                             </div>
                         </div>
                         <div class="col-xl-5 align-self-end">
@@ -400,11 +412,11 @@
                                 <div class="footer-social mt-5">
                                     <h5 class="ft-subtitle position-relative d-inline-block" style="color: #07DE0A;">Follow us on</h5>
                                     <ul class="social-nav mt-3">
-                                        <li><a href="#" target="_blank" class="rounded-circle bg-light overflow-hidden position-relative d-flex align-items-center justify-content-center text-white"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#" target="_blank" class="rounded-circle bg-light overflow-hidden position-relative d-flex align-items-center justify-content-center media"><i class="fab fa-facebook-f"></i></a></li>
                                         
-                                        <li><a href="#"  target="_blank" class="rounded-circle bg-light overflow-hidden position-relative d-flex align-items-center justify-content-center text-white"><i class="fab fa-telegram"></i></a></li>
+                                        <li><a href="#"  target="_blank" class="rounded-circle bg-light overflow-hidden position-relative d-flex align-items-center justify-content-center media"><i class="fab fa-telegram"></i></a></li>
                                         
-                                        <li><a href="#"  target="_blank" class="rounded-circle bg-light overflow-hidden position-relative d-flex align-items-center justify-content-center text-white"><i class="fab fa-tiktok"></i></a></li>
+                                        <li><a href="#"  target="_blank" class="rounded-circle bg-light overflow-hidden position-relative d-flex align-items-center justify-content-center media"><i class="fab fa-tiktok"></i></a></li>
                                         
                                     </ul>
                                 </div>
@@ -447,6 +459,7 @@
     <!--build:js-->
     <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
+    <script src="app.js"></script>
     <!--endbuild-->
 
 </body>
