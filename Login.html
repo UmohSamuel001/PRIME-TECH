@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://www.Prime-techx.net/user/login -->
+<html lang="en" data-theme="light"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Prime-techx">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <!-- Title -->
+  <title>Prime-tech || Login</title>
+  
+  <!-- Style CSS -->
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/a207e207d8.js" crossorigin="anonymous"></script>
+  <style>
+    .primary-btn{background-color: #096404;position:relative;z-index:1}.primary-btn span{margin-left:6px}.primary-btn::before{content:"";position:absolute;left:0;top:0;width:102%;height:100%; background-color: #071903;z-index:-1;opacity:0;-webkit-transition:all .3s ease-in;transition:all .2s ease-in}.primary-btn:hover{color:#fff}.primary-btn:hover::before{opacity:1}.outline-btn{border:1px solid #fff;padding:15px 32px}
+    a {text-decoration: none; color: #096404 !important;}
+  </style>
+</head>
+
+<body>
+
+  <div class="login-back-button" style="cursor: pointer;">
+      <i onclick="goBack()" class="fa-solid fa-arrow-left" style="color: #00361f;"></i>
+  </div>
+
+  <div class="alert  alert-dismissible fade <%= locals.messageStyle %> custom-toast-1 toast-<%= locals.messageColor %> home-page-toast" role="alert" data-bs-delay="7000" data-bs-autohide="true">
+    <div class="">
+        <p class="mb-1 text-white"><strong>Prime-tech!</strong></p>
+        <small class="d-block">
+            <%= locals.message %>
+        </small>
+    </div>
+    <button class="btn btn-close btn-close-white" data-bs-dismiss="alert"></button>
+    <span class="toast-autohide-animation" style="animation-duration: 7000ms;"></span>
+  </div>
+
+
+  <!-- Login Wrapper Area -->
+  <form action="/login" method="post">
+  <div class="login-wrapper d-flex align-items-center justify-content-center">
+    <div class="custom-container">
+      <div class="text-center px-4">
+        <img class="login-intro-img" src="img/logo (3).png" style="height: 80px;" alt="">
+      </div>
+
+      <!-- Register Form -->
+      <div class="register-form mt-4">
+        <h6 class="mb-3 text-center">Log in to continue...</h6>
+
+        
+          <div class="form-group mb-3">
+            <input class="form-control" type="text" id="username" name="username" placeholder="Username">
+          </div>
+
+          <div class="form-group position-relative">
+            <input class="form-control" id="psw-input" name="password" type="password" placeholder="Enter Password">
+            <div class="position-absolute" id="password-visibility">
+              <i class="eye fa-regular fa-eye"></i>
+              <i class="eye fa-regular fa-eye-slash"></i>            
+            </div>
+          </div>
+            <button type="submit" class="btn primary-btn w-100 text-white mt-3 fw-bold">Sign In</button>
+         
+        
+      </div>
+
+      <!-- Login Meta -->
+      <div class="login-meta-data text-center">
+        <a class="stretched-link forgot-password d-block mt-3 mb-1" href="#">Forgot
+          Password?</a>
+        <p class="mb-0">Didn't have an account? <a class="stretched-link" href="Register.html">Register Now</a></p>
+      </div>
+    </div>
+  </div>
+</form>
+
+ <!--build:js-->
+ <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+ <script src="jquery-3.6.0.min.js.download"></script>
+ <script src="app.js.download2"></script>
+ <script src="active.js.download"></script>
+ <!--endbuild-->
+ 
+ <script src="script.js"></script>
+ <script>
+  function goBack() {
+  window.history.back()
+}
+ </script>
+
+</body>
+</html>

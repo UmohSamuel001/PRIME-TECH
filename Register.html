@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)https://www.Prime-tech.net/user/register -->
+<html lang="en" data-theme="light">
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Prime-tech">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <!-- Title -->
+  <title>Prime-tech || Register </title>
+  
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/a207e207d8.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/a207e207d8.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body><style>
+		#pswmeter {
+			height: 4px;
+			background-color: #e2e9fe;
+			position: relative;
+			overflow: hidden;
+			border-radius: 4px;
+		}
+    #pswmeter .password-strength-meter-score {
+      height: inherit;
+      width: 0%;
+      transition: .5s ease;
+      background: #ea4c62;
+    }
+    #pswmeter .password-strength-meter-score.psms-25 {width: 25%; background: #ea4c62;}
+    #pswmeter .password-strength-meter-score.psms-50 {width: 50%; background: #f1b10f;}
+    #pswmeter .password-strength-meter-score.psms-75 {width: 75%; background: #1787b8;}
+    #pswmeter .password-strength-meter-score.psms-100 {width: 100%; background: #2ecc4a;}
+    .primary-btn{background-color: #096404;position:relative;z-index:1}.primary-btn span{margin-left:6px}.primary-btn::before{content:"";position:absolute;left:0;top:0;width:102%;height:100%; background-color: #071903;z-index:-1;opacity:0;-webkit-transition:all .3s ease-in;transition:all .2s ease-in}.primary-btn:hover{color:#fff}.primary-btn:hover::before{opacity:1}.outline-btn{border:1px solid #fff;padding:15px 32px}
+    </style>
+  <!-- Preloader -->
+
+  <div id="toastContainer" aria-live="polite" aria-atomic="true"></div>
+
+
+  <!-- Back Button -->
+  <div class="login-back-button" style="cursor: pointer;">
+      <i class="fa-solid fa-arrow-left" onclick="goBack()" style="color: #00361f;"></i>
+  </div>
+
+  <div class="alert  alert-dismissible fade <%= locals.messageStyle %> custom-toast-1 toast-<%= locals.messageColor %> home-page-toast" role="alert" data-bs-delay="7000" data-bs-autohide="true">
+    <div class="">
+        <p class="mb-1 text-white"><strong>Prime-tech!</strong></p>
+        <small class="d-block">
+            <%= locals.errors %>
+        </small>
+    </div>
+    <button class="btn btn-close btn-close-white" data-bs-dismiss="alert"></button>
+    <span class="toast-autohide-animation" style="animation-duration: 7000ms;"></span>
+  </div>
+
+  <!-- Login Wrapper Area -->
+  <div class="login-wrapper d-flex align-items-center justify-content-center">
+    <div class="custom-container">
+      <div class="text-center px-4">
+        <img class="login-intro-img" src="img/logo (3).png" style="height: 80px;" alt="">
+      </div>
+
+      <!-- Register Form -->
+      <form action="/signup" method="post">
+      <div class="register-form mt-4">
+        <h6 class="mb-3 text-center">Register A Prime-tech Account</h6>
+        
+          <!-- Form Field Start -->
+                        <!-- Form Field End -->
+            
+            
+            <!-- Form Field Start -->
+            <div class="form-group text-start mb-3 position-relative">
+                <input class="form-control" type="text" autocomplete="off" name="firstName" placeholder="Firstname" value="" required="">
+            </div>
+            <!-- Form Field End -->
+            
+            <!-- Form Field Start -->
+            <div class="form-group text-start mb-3 position-relative">
+                <input class="form-control" type="text" autocomplete="off" name="lastName" placeholder="Lastname" value="" required="">
+            </div>
+            <!-- Form Field End -->
+            
+            <!-- Form Field Start -->
+            <div class="form-group text-start mb-3 position-relative">
+                <input type="text" class="form-control" name="username" id="username" value="" placeholder="Username" required="">
+            </div>
+            <!-- Form Field End -->
+            
+            <!-- Form Field Start -->
+            <div class="form-group text-start mb-3 position-relative">
+                <input type="email" class="form-control" name="email" id="email" value="" placeholder="Email Address" required="">
+            </div>
+            <!-- Form Field End -->
+            
+            <!-- Form Field Start -->
+            <div class="form-group text-start mb-3 position-relative">
+                <input type="tel" class="form-control" name="phoneNo" id="mobile" value="" placeholder="Phone Number" required="">
+            </div>
+            <!-- Form Field End -->
+            
+            <!-- Form Field Start -->
+            <div class="form-group text-start mb-3 position-relative">
+                <input type="text" class="form-control" name="couponCode" id="code" value="" placeholder="Coupon Code" required="">
+            </div>
+            <!-- Form Field End -->
+
+            <!-- Form Field Start -->
+            <div class="form-group text-start mb-3 position-relative">
+                <input type="text" class="form-control" name="referralCode" id="referralcode" value="" placeholder="Referral Code" readonly required>
+            </div>
+            <!-- Form Field End -->
+            
+            <!-- Form Field Start -->
+            <div class="form-group text-start mb-3 position-relative">
+                <input type="password" class="form-control" name="password" id="psw-input" value="" placeholder="Password" required="">
+                <div class="position-absolute" id="password-visibility">
+                  <i class="eye fa-regular fa-eye"></i>
+                  <i class="eye fa-regular fa-eye-slash"></i>        
+                </div>
+            </div>
+            <!-- Form Field End -->
+            
+            <!-- Form Field Start -->
+            <div class="form-group text-start mb-3 position-relative">
+                <input type="password" class="form-control" name="password_confirmation" id="psw-input" value="" placeholder="Re-enter Password" required="">
+                <div class="position-absolute" id="password-visibility">
+                  <i class="eye fa-regular fa-eye"></i>
+                  <i class="eye fa-regular fa-eye-slash"></i>        
+            </div>
+            </div>
+            <!-- Form Field End -->
+            
+            
+            <div class="mb-3 password-strength-meter" id="pswmeter" style="display: none;"><div class="password-strength-meter-score"></div></div>
+
+          <div class="form-check mb-3">
+            <input class="form-check-input" id="checkedCheckbox" type="checkbox" value="">
+            <label class="form-check-label text-muted fw-normal" for="checkedCheckbox">I agree with the terms &amp;
+              policy.</label>
+          </div>
+
+            <!-- <a href="/user-login"> -->
+              <button type="submit" class="btn primary-btn w-100 text-white">Sign Up</button>
+            <!-- </a> -->
+         
+      </div>
+    </form>
+
+      <!-- Login Meta -->
+      <div class="login-meta-data text-center">
+        <p class="mt-3 mb-0">Already have an account? <a class="stretched-link" href="Login.html">Login</a></p>
+      </div>
+      
+      <div class="login-meta-data text-center">
+        <p class="mt-3 mb-0">Dont Have Coupon Code? <a class="stretched-link" href="Buy Coupon Code.html" >Buy Coupon</a></p>
+      </div>
+      
+    </div>
+  </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get the URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    
+    // Check if the 'reference' parameter exists in the URL
+    if(urlParams.has('reference')) {
+        // Get the value of the 'reference' parameter
+        const referenceValue = urlParams.get('reference');
+
+        // Display the reference value in the HTML element
+        document.getElementById('referralcode').value = referenceValue;
+    } else {
+        // If 'reference' parameter is not found, display a message
+        console.log("Reference parameter not found");;
+    }
+});
+
+</script>
+
+</script>
+
+
+ <!--build:js-->
+ <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+ <script src="js/jquery-3.6.0.min.js"></script>
+ <script src="js/active.js"></script>
+ <!--endbuild-->
+
+ <script>
+  function goBack() {
+  window.history.back();
+  }
+ </script>
+
+<script src="script.js"></script>
+</body></html>
