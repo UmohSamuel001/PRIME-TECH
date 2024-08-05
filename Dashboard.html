@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Vertexx">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Title -->
+  <title> Vertexx - Dashboard</title>
+  <link rel="shortcut icon" type="image/png" href="img/Vertex-09-copy.png">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/a207e207d8.js" crossorigin="anonymous"></script>
+<style>
+    .hidden {
+        display: none;
+    }
+    .invisible {
+        visibility: hidden;
+    }
+    .eyes {
+        transform: translateY(7px);
+    }
+</style>
+</head>
+
+<body class="bg-one">
+
+    <div id="mySidenav" class="sidenav">
+        
+        <div class="sidenav-wrapper">
+
+            <!-- Sidenav Nav -->
+            <ul class="sidenav-nav ps-0">
+                <li>
+                    <a href="Dashboard.html" class="active-item"><i class="fa-solid fa-house"></i><span>Dashboard</span></a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fa-solid fa-gamepad"></i><span>Vertexx Game</span>
+                        <span class="badge bg-danger rounded-pill ms-2">New</span>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="Contest.html"><i class="fa-solid fa-trophy"></i>
+                        <span>Vertexx Game</span>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="Withdrwals history.html"><i class="fa-solid fa-bank"></i><span>Withdrawals</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Upload Porduct.html"><i class="fa-solid fa-cart-shopping"></i><span>Upload Product</span></a>
+                </li>
+                <li>
+                    <a href="Buy Courses.html"><i class="fa-solid fa-graduation-cap"></i><span> Buy Course</span></a>
+                </li>
+                <li>
+                    <a href="Buy Courses.html"><i class="fa-solid fa-graduation-cap"></i><span>Purchased Courses</span></a>
+                </li>
+                <li>
+                    <a href="P2P Registration.html"><i class="fa-solid fa-user-plus"></i><span>P2P Registration</span></a>
+                </li>
+                <li>
+                    <a href="VTU History.html"><i class="fa-solid fa-mobile"></i></i><span>VTU Purchase History</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Donlines.html"><i class="fa-solid fa-users"></i><span>Downlines</span></a>
+                </li>
+                <li>
+                    <a href="#" class="night-mode-nav" onclick="toggleNightMode()">
+                        <i class="fa-solid fa-moon fs-3"></i><span>Night Mode</span>
+                        <div class="form-check form-switch ms-4">
+                            <input class="form-check-input form-check-success" id="darkSwitchMobile" type="checkbox">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-right-from-bracket"></i><span>Logout</span></a>
+                </li>
+            </ul>
+
+            <!-- Social Info -->
+            <div class="social-info-wrap">
+                <a href="#">
+                    <i class="fa-brands fa-facebook fs-4"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-telegram fs-4"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-twitter fs-4"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-tiktok fs-4"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram fs-4"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-youtube fs-4"></i>
+                </a>
+            </div>
+
+            <!-- Copyright Info -->
+            <div class="copyright-info">
+                <p>
+                    <span id="copyrightYear">2024</span>
+                    ©<a href="Home.html"> Vertexx</a>
+                </p>
+            </div>
+        </div>
+    </div>
+      
+
+  <div class="d-flex">
+
+    <!-- # flex Left -->
+    <div class="offcanvas-body p-0 col-12 col-md-1 shadow">
+        <div class="sidenav-wrapper-lg dark-div">
+
+            <!-- Sidenav Nav -->
+            <ul class="sidenav-nav ps-0">
+                <li>
+                    <a href="Dashboard.html" class="active-item"><i class="fa-solid fa-house"></i><span>Dashboard</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-gamepad"></i><span>Vertexx Game</span>
+                        <span class="badge bg-danger rounded-pill ms-2">New</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Withdrwals history.html"><i class="fa-solid fa-bank"></i><span>Withdrawals</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Upload Porduct.html"><i class="fa-solid fa-cart-shopping"></i><span>Upload Product</span></a>
+                </li>
+                <li>
+                    <a href="Buy Courses.html"><i class="fa-solid fa-graduation-cap"></i><span> Buy Course</span></a>
+                </li>
+                <li>
+                    <a href="Buy Courses.html"><i class="fa-solid fa-graduation-cap"></i><span>Purchased Courses</span></a>
+                </li>
+                <li>
+                    <a href="P2P Registration.html"><i class="fa-solid fa-user-plus"></i><span>P2P Registration</span></a>
+                </li>
+                <li>
+                    <a href="VTU History.html"><i class="fa-solid fa-mobile"></i></i><span>VTU Purchase History</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Donlines.html"><i class="fa-solid fa-users"></i><span>Downlines</span></a>
+                </li>
+                <li>
+                    <a href="#" class="night-mode-nav night-mode-lg" onclick="toggleNightMode()">
+                        <i class="fa-solid fa-moon fs-3"></i><span>Night Mode</span>
+                        <div class="form-check form-switch ms-4">
+                            <input class="form-check-input form-check-success" id="darkSwitchLargeScreen" type="checkbox">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-right-from-bracket"></i><span>Logout</span></a>
+                </li>
+            </ul>
+
+            <!-- Social Info -->
+            <div class="social-info-wrap">
+                <a href="#">
+                    <i class="fa-brands fa-facebook fs-4"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-telegram fs-4"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-twitter fs-4"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-tiktok fs-4"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram fs-4"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-youtube fs-4"></i>
+                </a>
+            </div>
+
+
+            <!-- Copyright Info -->
+            <div class="copyright-info">
+                <p>
+                    <span id="copyrightYear">2024</span>
+                    ©<a href="Home.html"> Vertexx</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- flex left end -->
+
+    <div class="flex-right col-12 col-md-11">
+        <nav class="navbar px-4 pt-4" id="navbar">
+            <div style="line-height: 7px;">
+                <p class="text-white">Sunday, 4th August</p>
+                <p class="fw-bold fs-5 welcome-mobile color-one">Hello, Jemimah_media</p>
+            </div>
+            <div class="navbar-nav align-items-center ms-auto dashboard-nav">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                        <img class="rounded-circle me-lg-2" src="img/637884b0303b61668842672.jpeg" alt="" style="width: 40px; height: 40px;">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end bg-gray border-0 rounded-0 rounded-bottom m-0">
+                      <a href="update-profile.html" class="dropdown-item text-white">My Profile</a>
+                      <a href="#" class="dropdown-item text-white">Settings</a>
+                        <a href="#" class="dropdown-item text-white">Log Out</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+          <!-- <div class="alert  alert-dismissible fade show custom-toast-1 toast-success home-page-toast" role="alert" data-bs-delay="7000" data-bs-autohide="true">
+            <div class="">
+                <p class="mb-1 text-white"><strong>Welcome to EarnHive!</strong></p>
+                <small class="d-block">
+                    Click the <strong>Add to Home Screen</strong> button &amp; enjoy it like an app.
+                </small>
+            </div>
+            <button class="btn btn-close btn-close-white" data-bs-dismiss="alert"></button>
+            <span class="toast-autohide-animation" style="animation-duration: 7000ms;"></span>
+          </div> -->
+
+        <div class="overall-div" style="display: flex;">
+            <!-- flex-right inner-left -->
+            <div class="col-12 col-md-8">
+                <div class="progress-mobile">
+                    <div class="d-flex gap-4 py-5" style="overflow-x: scroll;">
+                      <div class="col-9">
+                        <div class="ms-3 bg-gray py-3 shadows radius-three progress-div overflow-hidden">
+                          <h6 class="text-white px-4">Total Balance</h6><br>
+                          <div class="d-flex align-items-center justify-content-between mt-3 mb-1">
+                            <div class="bg-three px-3 py-2 rounde">
+                                <h5 class="fs-1 text- color-four">$11,00000</h5>
+                            </div>
+                            <p class="me-3">Affiliate</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-9">
+                        <div class="bg-gray py-3 shadows radius-three progress-div overflow-hidden">
+                          <h6 class="text-white px-4">Referrals</h6><br>
+                          <div class="d-flex align-items-center justify-content-between mt-3 mb-1">
+                            <div class="bg-three px-3 py-2">
+                                <h5 class="fs-1 text-white">50</h5>
+                            </div>
+                            <p class="me-3">Affiliate</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-9">
+                        <div class="me-3 bg-gray py-3 shadows radius-three progress-div overflow-hidden">
+                          <h6 class="text-white px-4">Total Withdrawal</h6><br>
+                          <div class="d-flex align-items-center justify-content-between mt-3 mb-1">
+                            <div class="bg-three px-3 py-2">
+                                <h5 class="fs-1 text-white">$25,000</h5>
+                            </div>
+                            <p class="me-3">Affiliate</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="container mt-3">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <!-- <div class=""> -->
+                        <div class="col-3">
+                            <a href="Update Profile.html" class="feature-card mx-auto text-center">
+                                <div class="card mx-auto bg-gray">
+                                    <i class="fa-solid fa-user fs-4 text-secondary"></i>
+                                </div>
+                                <p class="mb-0 color-four">Profile</p>
+                            </a>
+                        </div>
+
+                        <div class="col-3">
+                            <a href="Submit Withdrawal.html" class="feature-card mx-auto text-center">
+                                <div class="card mx-auto bg-gray">
+                                    <img src="img/withdraw.png" alt="">
+                                </div>
+                                <p class="mb-0 color-four">Withdraw</p>
+                            </a>
+                        </div>
+
+                        <div class="col-3">
+                            <a href="Update Bank Details.html" class="feature-card mx-auto text-center">
+                                <div class="card mx-auto bg-gray">
+                                    <img src="img/bank.png" alt="">
+                                </div>
+                                <p class="mb-0 color-four">Bank</p>
+                            </a>
+                        </div>
+
+                        <div class="col-3">
+                            <a href="Set pin.html" class="feature-card mx-auto text-center">
+                                <div class="card mx-auto bg-gray">
+                                    <i class="fa-solid fa-sliders fs-4 text-secondary"></i>
+                                </div>
+                                <p class="mb-0 color-four">Set Pin</p>
+                            </a>
+                        </div>
+                    <!-- </div> -->
+                  </div>
+                </div><br>
+
+                <!-- <div class="container">
+                  <div class="card shadow bg-gray" style="border-radius: 8px;">
+                    <div class="bg-img">
+                        <div class="card-body direction-rtl p-4">
+                            <h3 class="color-one">Total Withdrawal</h3>
+                            <p class="mb-4 text-black">₦450,000.00</p>
+                            <a class="btn btn-color text-white" href="Withdrwals history.html">History</a>
+                        </div>
+                    </div>
+                  </div>
+                </div><br> -->
+
+                <div class="container link-div">
+                    <div class="mb-5">
+                      <div class="card-body">
+                        <h6 class="color-one">Referral Link</h6>
+                        <p id="referral-link" class="mb-3 text-black">https://prime-tech.net/user/register/?reference=@azaramedia</p>
+                        <a id="copy-link-btn" class="btn btn-color text-white" href="https://earnhive.net/user/dashboard#">Copy Link</a>
+              
+                        <script>
+                          document.getElementById("copy-link-btn").addEventListener("click", function() {
+                            // Get the text from the referral link element
+                            var referralLink = document.getElementById("referral-link").innerText;
+
+                            // Create a temporary input element to copy the text to the clipboard
+                            var tempInput = document.createElement("input");
+                            tempInput.value = referralLink;
+                            document.body.appendChild(tempInput);
+
+                            // Select the text in the input element
+                            tempInput.select();
+                            tempInput.setSelectionRange(0, 99999); // For mobile devices
+
+                            // Copy the text to the clipboard
+                            document.execCommand("copy");
+
+                            // Remove the temporary input element
+                            document.body.removeChild(tempInput);
+
+                            // Show the alert message
+                            alert("Referral Link Has Been Copied");
+                          });
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            <!-- flex-right inner-left ends -->
+
+            <!-- flex-right inner-right -->
+            <!-- <div class="col-12 col-md-4 shadow dark-div quarter" style="border-radius: 8px; margin-top: 15px;">
+                <div class="top-products-area mt-3">
+                    <div class="container">
+                        <div class="row g-2 products-row">
+                            <div class="col-12 mb-2">
+                                <div class="primary single-product-card">
+                                    <div class="">
+                                        <h5 class="product-title d-block text-truncate">Game Balance</h5>
+                                        <p class="sale-price">₦76.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-2">
+                                <div class="primary single-product-card">
+                                    <div class="">
+                                        <h5 class="product-title d-block text-truncate">Direct Sales</h5>
+                                        <p class="sale-price">₦287,000.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-2">
+                                <div class="primary single-product-card">
+                                    <div class="">
+                                        <h5 class="product-title d-block text-truncate">In-Direct Sales</h5>
+                                        <p class="sale-price">₦375,800.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <div class="primary single-product-card">
+                                    <div class="">
+                                        <h5 class="product-title d-block text-truncate">Vertexx Cash</h5>
+                                        <p class="sale-price">H20,750.00 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+          
+            
+              <!-- Modal -->
+              <div class="modal fade" id="slideModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      This is a modal that slides in from the bottom.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+        </div>
+    </div>
+
+  
+
+    <footer class="shadow dashboard-footer">
+        <div class="d-flex py-2 align-items-center justify-content-around bg-two content">
+          <a href="">
+            <div class="d-flex flex-column align-items-center">
+                <ion-icon name="home"></ion-icon>
+                <small>Dashboard</small>
+            </div>
+          </a>
+          <a href="">
+            <div class="d-flex flex-column align-items-center">
+                <ion-icon name="time-outline"></ion-icon>
+                <small>History</small>
+            </div>
+          </a>
+          <a href="">
+            <div class="d-flex flex-column align-items-center">
+                <ion-icon name="card-outline"></ion-icon>
+                <small>Withdraw</small>
+            </div>
+          </a>
+          <!-- <a href="">
+            <div class="d-flex flex-column align-items-center">
+                <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                <small>More</small>
+            </div>
+          </a> -->
+          <button type="button" class="btn-more" data-toggle="modal" data-target="#slideModal">
+            <div class="d-flex flex-column align-items-center">
+                <ion-icon name="ellipsis-horizontal"></ion-icon>
+                <small>More</small>
+            </div>
+          </button>
+        </div>
+    </footer>
+</div>
+
+
+
+  
+  <!-- Bootstrap Basic Modal -->
+<!-- <div class="modal fade" id="bootstrapBasicModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title" id="exampleModalLabel">Start making it Big by Joining the Forum below</h6>
+        <button class="btn btn-close p-1 ms-auto" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/1702668915.jpg" alt="Image Description" class="img-fluid mb-3">
+        <p>Join our Unique ANALYSIS  channel for profitable Sure winning Bet 💥💥,  Sure Winning predicted matches Awaiting for you. 
+
+Click link to Channel Now and win all our daily sure Odd 
+👇🏽👇🏽👇</p>
+      </div>
+      <div class="modal-footer"> -->
+        <!--<button class="btn btn-sm btn-secondary" type="button" data-bs-dismiss="modal">Close</button>-->
+        <!-- <a class="btn btn-lg btn-success" type="button" href="https://t.me/+aa-ZaU_8kjM2Y2M0">Click here to Join now</a>
+      </div>
+    </div>
+  </div>
+</div> -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script>
+  // JavaScript to show the modal on page load
+  document.addEventListener("DOMContentLoaded", function() {
+    var myModal = new bootstrap.Modal(document.getElementById('bootstrapBasicModal'));
+    myModal.show();
+  });
+</script>
+
+
+</div>
+<!-- flex-right end -->
+
+</div>
+<script src="script.js"></script>
+<!-- <script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("closebtn").style.display = "block";
+    }
+    
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("closebtn").style.display = "none";
+    }
+</script> -->
+
+  
+  <link rel="stylesheet" href="./Dashboard_files/iziToast.min.css">
+<script src="./Dashboard_files/iziToast.min.js.download"></script>
+
+<script>
+    "use strict";
+    function notify(status,message) {
+        iziToast[status]({
+            message: message,
+            position: "topRight"
+        });
+    }
+</script>
+
+
+  <!-- All JavaScript Files -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="dark-rtl.js.download"></script>
+
+</body>
+</html>

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)https://Vertexx.net/user/team# -->
+<html lang="en" data-theme="light"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Vertexx">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  
+  <!-- Title -->
+  <title> Vertexx - Donlines</title>
+  <link rel="shortcut icon" type="image/png" href="img/Vertex-09-copy.png">
+
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/a207e207d8.js" crossorigin="anonymous"></script>
+
+ </head>
+
+<body class="bg-one">
+
+
+    <div id="mySidenav" class="sidenav">
+        
+        <div class="sidenav-wrapper">
+
+            <!-- Sidenav Nav -->
+            <ul class="sidenav-nav ps-0">
+                <li>
+                    <a href="Dashboard.html"><i class="fa-solid fa-house"></i><span>Dashboard</span></a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fa-solid fa-gamepad"></i><span>Vertexx Game</span>
+                        <span class="badge bg-danger rounded-pill ms-2">New</span>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="Contest.html"><i class="fa-solid fa-trophy"></i>
+                        <span>Vertexx Game</span>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="Withdrwals history.html"><i class="fa-solid fa-bank"></i><span>Withdrawals</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Upload Porduct.html"><i class="fa-solid fa-cart-shopping"></i><span>Upload Product</span></a>
+                </li>
+                <li>
+                    <a href="Buy Courses.html"><i class="fa-solid fa-graduation-cap"></i><span> Buy Course</span></a>
+                </li>
+                <li>
+                    <a href="Buy Courses.html"><i class="fa-solid fa-graduation-cap"></i><span>Purchased Courses</span></a>
+                </li>
+                <li>
+                    <a href="P2P Registration.html"><i class="fa-solid fa-user-plus"></i><span>P2P Registration</span></a>
+                </li>
+                <li>
+                    <a href="VTU History.html"><i class="fa-solid fa-mobile"></i></i><span>VTU Purchase History</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Donlines.html" class="active-item"><i class="fa-solid fa-users"></i><span>Downlines</span></a>
+                </li>
+
+                <li>
+                    <a href="#" class="night-mode-nav" onclick="toggleNightMode()">
+                        <i class="fa-solid fa-moon fs-3"></i><span>Night Mode</span>
+                        <div class="form-check form-switch ms-4">
+                            <input class="form-check-input form-check-success" id="darkSwitchMobile" type="checkbox">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-right-from-bracket"></i><span>Logout</span></a>
+                </li>
+            </ul>
+
+            <!-- Social Info -->
+            <div class="social-info-wrap">
+                <a href="#">
+                    <i class="fa-brands fa-facebook fs-4"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-telegram fs-4"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-twitter fs-4"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-tiktok fs-4"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram fs-4"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-youtube fs-4"></i>
+                </a>
+            </div>
+
+            <!-- Copyright Info -->
+            <div class="copyright-info">
+                <p>
+                    <span id="copyrightYear">2024</span>
+                    ©<a href="Home.html"> Vertexx</a>
+                </p>
+            </div>
+        </div>
+    </div>
+      
+
+  <div class="d-flex">
+
+    <!-- # flex Left -->
+    <div class="offcanvas-body p-0 col-12 col-md-1 shadow">
+        <div class="sidenav-wrapper-lg dark-div">
+
+            <!-- Sidenav Nav -->
+            <ul class="sidenav-nav ps-0">
+                <li>
+                    <a href="Dashboard.html"><i class="fa-solid fa-house"></i><span>Dashboard</span></a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fa-solid fa-gamepad"></i><span>Vertexx Game</span>
+                        <span class="badge bg-danger rounded-pill ms-2">New</span>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="Contest.html"><i class="fa-solid fa-trophy"></i>
+                        <span>Vertexx Game</span>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="Withdrwals history.html"><i class="fa-solid fa-bank"></i><span>Withdrawals</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Upload Porduct.html"><i class="fa-solid fa-cart-shopping"></i><span>Upload Product</span></a>
+                </li>
+                <li>
+                    <a href="Buy Courses.html"><i class="fa-solid fa-graduation-cap"></i><span> Buy Course</span></a>
+                </li>
+                <li>
+                    <a href="Buy Courses.html"><i class="fa-solid fa-graduation-cap"></i><span>Purchased Courses</span></a>
+                </li>
+                <li>
+                    <a href="P2P Registration.html"><i class="fa-solid fa-user-plus"></i><span>P2P Registration</span></a>
+                </li>
+                <li>
+                    <a href="VTU History.html"><i class="fa-solid fa-mobile"></i></i><span>VTU Purchase History</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Donlines.html" class="active-item"><i class="fa-solid fa-users"></i><span>Downlines</span></a>
+                </li>
+
+                <li>
+                    <a href="#" class="night-mode-nav night-mode-lg" onclick="toggleNightMode()">
+                        <i class="fa-solid fa-moon fs-3"></i><span>Night Mode</span>
+                        <div class="form-check form-switch ms-4">
+                            <input class="form-check-input form-check-success" id="darkSwitchLargeScreen" type="checkbox">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-right-from-bracket"></i><span>Logout</span></a>
+                </li>
+            </ul>
+
+            <!-- Social Info -->
+            <div class="social-info-wrap">
+                <a href="#">
+                    <i class="fa-brands fa-facebook fs-4"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-telegram fs-4"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-twitter fs-4"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-tiktok fs-4"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram fs-4"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-youtube fs-4"></i>
+                </a>
+            </div>
+
+
+            <!-- Copyright Info -->
+            <div class="copyright-info">
+                <p>
+                    <span id="copyrightYear">2024</span>
+                    ©<a href="Home.html"> Vertexx</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- flex left end -->
+  
+    <div class="flex-right more col-12 col-md-11">
+        <nav class="navbar px-4 pt-4" id="navbar">
+            <div style="line-height: 7px;">
+                <p class="text-white">Sunday, 4th August</p>
+                <p class="fw-bold fs-5 welcome-mobile color-one">Hello, Jemimah_media</p>
+            </div>
+            <div class="navbar-nav align-items-center ms-auto dashboard-nav">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                        <img class="rounded-circle me-lg-2" src="img/637884b0303b61668842672.jpeg" alt="" style="width: 40px; height: 40px;">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end bg-gray border-0 rounded-0 rounded-bottom m-0">
+                      <a href="update-profile.html" class="dropdown-item text-white">My Profile</a>
+                      <a href="#" class="dropdown-item text-white">Settings</a>
+                        <a href="#" class="dropdown-item text-white">Log Out</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+  
+        <div class="overall-div center-div">
+          <div class="container mt-3">
+            <div class="p-2">
+              <div class="px-2">
+                <h6 class="fw-bold text-white">Downlines</h6>
+              </div>
+            </div>
+            
+                                
+ 
+            <div class="card mt-1 shadow bg-gray">
+                <div class="card-body">
+                  <div class="dataTable-wrapper dataTable-loading no-footer sortable searchable fixed-columns">
+                    <div class="dataTable-top d-flex justify-content-between">
+                      <div class="dataTable-dropdown">
+                        <label>
+                          <select class="dataTable-selector bg-three">
+                            <option value="10" selected>10</option>
+                            <option value="20">20</option>
+                            <option value="30">30</option>
+                            <option value="40">40</option>
+                            <option value="50">50</option>
+                          </select>
+                        </label>
+                      </div>
+                      <div class="dataTable-search">
+                        <input class="dataTable-input bg-three" placeholder="Search" type="text">
+                      </div>
+                    </div>
+                    <div class="dataTable-container">
+                      <table class="w-100 table" id="dataTable">
+                        <thead>
+                          <tr>
+                            <th data-sortable style="width: 30.6886%;"><a href="#" class="dataTable-sorter color-one">SN</a></th>
+                            <th data-sortable style="width: 69.3114%;" class="asc"><a href="#" class="dataTable-sorter color-one">Username</a></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <!-- Replace the table body content with your actual rows -->
+                          <tr><td>1</td><td>Bosslady</td></tr>
+                          <tr><td>2</td><td>Charityluv</td></tr>
+                          <tr><td>1</td><td>Falconer</td></tr>
+                        
+                          <!-- Repeat rows to fill up the table -->
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="dataTable-bottom d-flex justify-content-between">
+                      <div class="dataTable-info color-one" id="dataTableInfo">1 to 10 entries</div>
+                      <div class="dataTable-pagination">
+                        <ul class="pagination">
+                          <!-- Pagination links will be generated dynamically -->
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+       
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="slideModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          This is a modal that slides in from the bottom.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="shadow dashboard-footer">
+    <div class="d-flex py-2 align-items-center justify-content-around bg-two content">
+      <a href="Dashboard.html">
+        <div class="d-flex flex-column align-items-center">
+            <ion-icon name="home"></ion-icon>
+            <small>Dashboard</small>
+        </div>
+      </a>
+      <a href="Withdrwals history.html">
+        <div class="d-flex flex-column align-items-center">
+            <ion-icon name="time-outline"></ion-icon>
+            <small>History</small>
+        </div>
+      </a>
+      <a href="Submit Withdrawal.html">
+        <div class="d-flex flex-column align-items-center">
+            <ion-icon name="card-outline"></ion-icon>
+            <small>Withdraw</small>
+        </div>
+      </a>
+      <button type="button" class="btn-more" data-toggle="modal" data-target="#slideModal">
+        <div class="d-flex flex-column align-items-center">
+            <ion-icon name="ellipsis-horizontal"></ion-icon>
+            <small>More</small>
+        </div>
+      </button>
+    </div>
+</footer>
+
+
+<script src="script.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    // Number of items per page
+    var itemsPerPage = 10;
+    // Selecting the table and tbody
+    var table = document.getElementById('dataTable');
+    var tbody = table.querySelector('tbody');
+    // Getting the total number of rows
+    var totalRows = tbody.getElementsByTagName('tr').length;
+    // Getting the total number of pages
+    var totalPages = Math.ceil(totalRows / itemsPerPage);
+    // Current page
+    var currentPage = 1;
+
+    // Function to show a specific page
+    function showPage(page) {
+        // Hide all rows
+        var rows = tbody.getElementsByTagName('tr');
+        for (var i = 0; i < rows.length; i++) {
+            rows[i].style.display = 'none';
+        }
+        // Calculate the starting and ending index of the rows to show
+        var startIndex = (page - 1) * itemsPerPage;
+        var endIndex = Math.min(startIndex + itemsPerPage, totalRows);
+        // Show the rows within the calculated range
+        for (var i = startIndex; i < endIndex; i++) {
+            rows[i].style.display = '';
+        }
+        // Update data table info
+        var info = document.getElementById('dataTableInfo');
+        info.textContent = startIndex + 1 + ' to ' + endIndex + ' entries';
+    }
+
+    // Show the first page by default
+    showPage(currentPage);
+
+    // Generate pagination links
+    var pagination = document.querySelector('.dataTable-pagination .pagination');
+    for (var i = 1; i <= totalPages; i++) {
+        var li = document.createElement('li');
+        li.className = 'page-item';
+        var link = document.createElement('a');
+        link.href = '#';
+        link.textContent = i;
+        link.className = 'page-link';
+        li.appendChild(link);
+        pagination.appendChild(li);
+    }
+
+    // Event listener for pagination links
+    pagination.addEventListener('click', function (e) {
+        e.preventDefault();
+        var targetPage = parseInt(e.target.textContent);
+        if (!isNaN(targetPage)) {
+            currentPage = targetPage;
+            // Show the corresponding page
+            showPage(currentPage);
+        }
+    });
+
+    // Event listener for row selector
+    var selector = document.querySelector('.dataTable-selector');
+    selector.addEventListener('change', function () {
+        itemsPerPage = parseInt(this.value);
+        // Recalculate total pages
+        totalPages = Math.ceil(totalRows / itemsPerPage);
+        // Regenerate pagination links
+        pagination.innerHTML = '';
+        for (var i = 1; i <= totalPages; i++) {
+            var li = document.createElement('li');
+            li.className = 'page-item';
+            var link = document.createElement('a');
+            link.href = '#';
+            link.textContent = i;
+            link.className = 'page-link';
+            li.appendChild(link);
+            pagination.appendChild(li);
+        }
+        // Show the first page after changing items per page
+        currentPage = 1;
+        showPage(currentPage);
+    });
+});
+</script>
+
+
+  <!-- All JavaScript Files -->
+  <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="dark-rtl.js.download"></script>
+
+</body>
+</html>
