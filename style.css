@@ -8948,7 +8948,7 @@ form .btn-lg {
   color: #81af9b !important;
 }
 .form-floating label {
-  color: #07DE0A !important;
+  /* color: #07DE0A !important; */
 }
 .bg-three {
   background-color: #81af9b2a !important;
