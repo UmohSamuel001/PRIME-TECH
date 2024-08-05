@@ -112,8 +112,8 @@ kbd {
   background-color: #061238;
 }
 
-.form-control::-webkit-input-placeholder {
-  color: #99cdb0b7;
+.form-control::-webkit-input-placeholder, .form-select {
+  color: grey !important;
 }
 
 
@@ -136,7 +136,7 @@ caption,
 .link-secondary,
 .btn-outline-secondary:disabled,
 .btn-outline-secondary.disabled {
-  color: #99cdb0;
+  color: #99cdb0 !important;
 }
 
 .table,
@@ -1063,7 +1063,7 @@ caption,
 
 /* .form-control:disabled,
 .form-control[readonly] {
-  background-color: #f1f2fb;
+  background-color:  ;
 } */
 
 .bs-tooltip-auto[x-placement^=top] .tooltip-arrow::before,
@@ -3813,7 +3813,7 @@ a.affan-element-item i {
 }
 .shadows {
   /* box-shadow: 1px 1px 60px 8px rgba(153, 247, 206, 0.1) !important; */
-  box-shadow: 8px 9px 27px 4px rgb(7, 222, 10, 0.1735) !important;
+  box-shadow: 8px 9px 25px 2px rgb(7, 222, 10, 0.1735) !important;
 }
 .scroll {
   background-color: red;
@@ -8948,7 +8948,7 @@ form .btn-lg {
   color: #81af9b !important;
 }
 .form-floating label {
-  color: white !important;
+  color: #07DE0A !important;
 }
 .bg-three {
   background-color: #81af9b2a !important;
