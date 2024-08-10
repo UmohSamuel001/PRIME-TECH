@@ -1507,6 +1507,11 @@ textarea:invalid {
 .dashboard-footer {
   display: none !important;
 }
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 @media screen and (max-width: 550px) {
   .navbar--toggler {
@@ -1527,6 +1532,9 @@ textarea:invalid {
     margin-bottom: 80px !important;
   }
   .overall-div {
+    display: block !important;
+  }
+  .center {
     display: block !important;
   }
   .quarter {
@@ -1578,7 +1586,15 @@ textarea:invalid {
   .pagination li {
     background-color: #07DE0A !important;
     margin-left: 10px !important;
-    /* border-radius: 15px !important; */
+  }
+  .sm {
+    display: block !important;
+  }
+  .lg {
+    display: none !important;
+  }
+  .resize {
+    padding: 0 12px;
   }
 }
 
@@ -7460,4 +7476,7 @@ form .btn-lg {
   background-size: 1em;
   border: none; /* Remove border if any */
   scale: 2.5 !important;
+}
+.sm {
+  display: none;
 }
