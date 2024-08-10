@@ -1513,6 +1513,7 @@ textarea:invalid {
   justify-content: center;
 }
 
+
 @media screen and (max-width: 550px) {
   .navbar--toggler {
     display: block !important;
@@ -2022,7 +2023,7 @@ a.affan-element-item i {
   color: #1f0757;
   font-weight: 700;
 }
-.convert-naira, .convert-dollar {
+.convert {
   float: inline-end;
   transform: translateY(15px);
   cursor: pointer;
