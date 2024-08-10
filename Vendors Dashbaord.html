@@ -17,252 +17,59 @@
   <script src="https://kit.fontawesome.com/a207e207d8.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-light">
-
-  <div id="mySidenav" class="sidenav">
-        
-    <div class="sidenav-wrapper">
-
-        <!-- Sidenav Nav -->
-        <ul class="sidenav-nav ps-0">
-            <li>
-                <a href="/dashboard"><i class="fa-solid fa-house"></i><span>Dashboard</span></a>
-            </li>
-            <% if (data.is_a_vendor == 1) { %>
-                <li>
-                    <a href="/vendor-dashboard?id=<%= data.user_id %>" class="active-item"><i class="fa-solid fa-gift"></i><span>Vendor Dashboard</span></a>
-                </li>
-            <% } else {%>
-                
-                <% } %>
-            
-
-            <li>
-                <a href="#"><i class="fa-solid fa-gamepad"></i><span>Prime-tech Game</span>
-                    <span class="badge bg-danger rounded-pill ms-2">New</span>
-                </a>
-            </li>
-<li>
-                    <a href="/withdrawal-history"><i class="fa-solid fa-bank"></i><span>Withdrawals</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="/upload-product"><i class="fa-solid fa-cart-shopping"></i><span>Upload Product</span></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa-solid fa-graduation-cap"></i><span> Buy Course</span></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa-solid fa-graduation-cap"></i><span>Purchased Courses</span></a>
-                </li>
-                <li>
-                    <a href="/p2p-registration"><i class="fa-solid fa-user-plus"></i><span>P2P Registration</span></a>
-                </li>
-                <li>
-                    <a href="/VTU-history"><i class="fa-solid fa-mobile"></i></i><span>VTU Purchase History</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="/downlines"><i class="fa-solid fa-users"></i><span>Downlines</span></a>
-                </li>
-                <li>
-                    <a href="#" class="night-mode-nav night-mode-lg" onclick="toggleNightMode()">
-                        <i class="fa-solid fa-moon fs-3"></i><span>Night Mode</span>
-                        <div class="form-check form-switch ms-4">
-                            <input class="form-check-input form-check-success" id="darkSwitchLargeScreen" type="checkbox">
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="/logout"><i class="fa-solid fa-right-from-bracket"></i><span>Logout</span></a>
-                </li>
-        </ul>
-
-        <!-- Social Info -->
-        <div class="social-info-wrap">
-            <a href="https://www.facebook.com/share/FHEQzRzVQu8LAXxi/?mibextid=K35XfP ">
-                <i class="fa-brands fa-facebook fs-4"></i>
-            </a>
-            <a href="https://t.me/+1xHwE2eR_5tiZjU0
-">
-                <i class="fa-brands fa-telegram fs-4"></i>
-            </a>
-            <!--<a href="#">-->
-            <!--    <i class="fa-brands fa-twitter fs-4"></i>-->
-            <!--</a>-->
-            <a href="https://www.tiktok.com/@Prime-tech officials?_t=8jIxj7VKUUP&_r=1
-">
-                <i class="fa-brands fa-tiktok fs-4"></i>
-            </a>
-            <!--<a href="#">-->
-            <!--    <i class="fa-brands fa-instagram fs-4"></i>-->
-            <!--</a>-->
-            <!--<a href="#">-->
-            <!--    <i class="fa-brands fa-youtube fs-4"></i>-->
-            <!--</a>-->
-        </div>
-
-        <!-- Copyright Info -->
-        <div class="copyright-info">
-            <p>
-                <span id="copyrightYear">2024</span>
-                ©<a href="/"> Prime-tech </a>
-            </p>
-        </div>
-    </div>
-</div>
-  
+<body class="bg-one">
 
 <div class="d-flex">
 
-<!-- # flex Left -->
-<div class="offcanvas-body p-0 col-12 col-md-1 shadow">
-    <div class="sidenav-wrapper-lg dark-div">
-
-        <!-- Sidenav Nav -->
-        <ul class="sidenav-nav ps-0">
-            <li>
-                <a href="/dashboard"><i class="fa-solid fa-house"></i><span>Dashboard</span></a>
-            </li>
-
-            <% if (data.is_a_vendor == 1) { %>
-                <li>
-                    <a href="/vendor-dashboard?id=<%= data.user_id %>" class="active-item"><i class="fa-solid fa-gift"></i><span>Vendor Dashboard</span></a>
-                </li>
-            <% } else {%>
-                <% } %>
-            
-            <li>
-                <a href="#"><i class="fa-solid fa-gamepad"></i><span>Prime-tech Game</span>
-                    <span class="badge bg-danger rounded-pill ms-2">New</span>
-                </a>
-            </li>
-           <li>
-                    <a href="/withdrawal-history"><i class="fa-solid fa-bank"></i><span>Withdrawals</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="/upload-product"><i class="fa-solid fa-cart-shopping"></i><span>Upload Product</span></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa-solid fa-graduation-cap"></i><span> Buy Course</span></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa-solid fa-graduation-cap"></i><span>Purchased Courses</span></a>
-                </li>
-                <li>
-                    <a href="/p2p-registration"><i class="fa-solid fa-user-plus"></i><span>P2P Registration</span></a>
-                </li>
-                <li>
-                    <a href="/VTU-history"><i class="fa-solid fa-mobile"></i></i><span>VTU Purchase History</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="/downlines"><i class="fa-solid fa-users"></i><span>Downlines</span></a>
-                </li>
-                <li>
-                    <a href="#" class="night-mode-nav night-mode-lg" onclick="toggleNightMode()">
-                        <i class="fa-solid fa-moon fs-3"></i><span>Night Mode</span>
-                        <div class="form-check form-switch ms-4">
-                            <input class="form-check-input form-check-success" id="darkSwitchLargeScreen" type="checkbox">
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="/logout"><i class="fa-solid fa-right-from-bracket"></i><span>Logout</span></a>
-                </li>
-        </ul>
-
-        <!-- Social Info -->
-        <div class="social-info-wrap">
-            <a href="#">
-                <i class="fa-brands fa-facebook fs-4"></i>
-            </a>
-            <a href="#">
-                <i class="fa-brands fa-telegram fs-4"></i>
-            </a>
-            <a href="#">
-                <i class="fa-brands fa-twitter fs-4"></i>
-            </a>
-            <a href="#">
-                <i class="fa-brands fa-tiktok fs-4"></i>
-            </a>
-            <a href="#">
-                <i class="fa-brands fa-instagram fs-4"></i>
-            </a>
-            <a href="#">
-                <i class="fa-brands fa-youtube fs-4"></i>
-            </a>
-        </div>
-
-
-        <!-- Copyright Info -->
-        <div class="copyright-info">
-            <p>
-                <span id="copyrightYear">2024</span>
-                ©<a href="/"> Prime-tech </a>
-            </p>
-        </div>
-    </div>
-</div>
-<!-- flex left end -->
-
     <div class="flex-right col-12 col-md-11">
-        <!-- Header Area -->
-        <div class="col-12 header-area" style="top: 0;">
-          <!-- Header Content -->
-          <div class="header-content header-style-five position-relative d-flex align-items-center justify-content-between">
-              <!-- Logo Wrapper -->
-              <div class="logo-wrapper">
-                  <a href="Home.html">
-                      <img src="img/Vertex-09-copy.png" class="dark-img" alt="">
-                      <img src="img/Vertex-08-copy.png" class="light-img" alt="" style="display: none;">
-                  </a>
-              </div>
-
-              <p class="fw-bold fs-5 mt-4 welcome-lg">Welcome, Daniel</p>
-              <!-- Navbar Toggler -->
-              <div class="navbar--toggler" onclick="openNav()">
-                  <span class="d-block"></span>
-                  <span class="d-block"></span>
-                  <span class="d-block"></span>
-              </div>
-              <a href="javascript:void(0)" class="closebtn" id="closebtn" onclick="closeNav()">&times;</a>
-          </div>
-      </div>
-      <p class="fw-bold fs-5 mt-2 welcome-mobile me-3">Welcome, Daniel</p>
+      <nav class="navbar px-4 pt-4" id="navbar">
+        <div style="line-height: 7px;">
+            <p class="text-white">Sunday, 4th August</p>
+            <p class="fw-bold fs-5 welcome-mobile color-one">Hello, Jemimah_media</p>
+        </div>
+        <div class="navbar-nav align-items-center ms-auto dashboard-nav">
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                    <img class="rounded-circle me-lg-2" src="img/637884b0303b61668842672.jpeg" alt="" style="width: 40px; height: 40px;">
+                </a>
+                <div class="dropdown-menu dropdown-menu-end bg-gray border-0 rounded-0 rounded-bottom m-0">
+                  <a href="update-profile.html" class="dropdown-item text-white">My Profile</a>
+                  <a href="#" class="dropdown-item text-white">Settings</a>
+                    <a href="#" class="dropdown-item text-white">Log Out</a>
+                </div>
+            </div>
+        </div>
+      </nav>
 
         <div class="overall-div" style="display: flex;">
             <!-- flex-right inner-left -->
             <div class="col-12 col-md-8">
 
               <div class="container mt-3">
-                  <div class="card shadow hero-div">
+                  <div class="card-width shadow bg-gray radius-three">
                       <div class="card-body p-4">
 
                           <div class="d-flex justify-content-between">
                               <span class="d-flex gap-2">
-                                <i class="fa-solid fa-gift text-white mb-4 fs-4"></i>
-                                <p class="text-white mb-0 fs-5">Available To Generate</p>
+                                <i class="fa-solid fa-gift color-one mb-4 fs-4"></i>
+                                <p class="text-white mb-0 fs-6">Available To Generate</p>
                               </span>
-                              <p class="text-white fs-6">0</p>
+                              <p class="text-white fs-5">0</p>
                           </div>
 
-                          <div class="d-flex justify-content-between mt-3">
+                          <div class="d-flex justify-content-between mt-4">
                               <span class="d-flex gap-2">
-                                <i class="fa-solid fa-circle-check text-white mb-4 fs-4"></i>
-                                <p class="text-white mb-0 fs-5">Total Sold</p>
+                                <i class="fa-solid fa-circle-check color-one mb-4 fs-4"></i>
+                                <p class="text-white mb-0 fs-6">Total Sold</p>
                               </span>
-                              <p class="text-white fs-6">₦2,479,500.00</p>
+                              <p class="text-white fs-5">₦2,479,500.00</p>
                           </div>
                       </div>
                   </div>
               </div><br>
    
-              <div class="container">
-                <div class="card shadow">
+              <div class="">
+                <div class="">
                   <div class="card-body">
                     <div class="standard-tab">
                       <ul class="nav rounded-lg mb-2 p-2 shadow-sm" id="affanTabs1" role="tablist">
@@ -279,90 +86,37 @@
                         <div class="tab-pane fade show active" id="bootstrap" role="tabpanel" aria-labelledby="bootstrap-tab">
 
                           <div class="">
-                  <div class="card-body">
+                  <div class="">
                     <div class="dataTable-wrapper dataTable-loading no-footer sortable searchable fixed-columns">
-                      <div class="dataTable-top d-flex gap-5 justify-content-between">
-                      <div class="dataTable-dropdown">
-                        <label>
-                          <select class="dataTable-selector">
-                            <option value="10" selected="">10</option>
-                            <option value="20">20</option>
-                            <option value="30">30</option>
-                            <option value="40">40</option>
-                            <option value="50">50</option>
-                          </select>
-                        </label>
+                      <div class="dataTable-top d-flex justify-content-between">
+                        <div class="dataTable-dropdown">
+                          <label>
+                            <select class="dataTable-selector bg-three">
+                              <option value="10" selected>10</option>
+                              <option value="20">20</option>
+                              <option value="30">30</option>
+                              <option value="40">40</option>
+                              <option value="50">50</option>
+                            </select>
+                          </label>
+                        </div>
+                        <div class="dataTable-search">
+                          <input class="dataTable-input bg-three" placeholder="Search" type="text">
+                        </div>
                       </div>
-                    <div class="dataTable-search">
-                      <input class="dataTable-input" placeholder="Search" type="text">
-                    </div>
-                  </div>
                   <div class="dataTable-container">
-                    <table class="w-100 dataTable-table table" id="dataTable">
+                    <table class="w-100 table" id="dataTable">
                       <thead>
-                        <tr><th data-sortable="" style="width: 12.2727%;"><a href="#" class="dataTable-sorter">SN</a></th><th data-sortable="" style="width: 67.5%;"><a href="#" class="dataTable-sorter">Code</a></th><th data-sortable="" style="width: 20.2841%;"><a href="#" class="dataTable-sorter">Value</a></th></tr>
+                        <tr><th data-sortable="" style="width: 12.2727%;"><a href="#" class="dataTable-sorter color-one">SN</a></th>
+                          <th data-sortable="" style="width: 67.5%;"><a href="#" class="dataTable-sorter color-one">Code</a></th>
+                          <th data-sortable="" style="width: 20.2841%;"><a href="#" class="dataTable-sorter color-one">Value</a></th></tr>
                       </thead>
                       <tbody>
-                        <!-- <% for( let i = 0; i < activeCodes.length; i++ ) { %>
+                        <!-- <%# for( let i = 0; i < activeCodes.length; i++ ) { %>
                             <tr>
-                              <td><%= i + 1 %></td><td><%= activeCodes[i].token %></td><td>₦5,000</td>
+                              <td><%#= i + 1 %></td><td><%#= activeCodes[i].token %></td><td>₦5,000</td>
                             </tr>
-                        <% } %> -->
-                        <tr>
-                          <td>1</td>
-                          <td>esfhg784r47r623847r234y2</td>
-                          <td>4,500</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>esfhg784r47r623847r234y2</td>
-                          <td>4,500</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>esfhg784r47r623847r234y2</td>
-                          <td>4,500</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>esfhg784r47r623847r234y2</td>
-                          <td>4,500</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>esfhg784r47r623847r234y2</td>
-                          <td>4,500</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>esfhg784r47r623847r234y2</td>
-                          <td>4,500</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>esfhg784r47r623847r234y2</td>
-                          <td>4,500</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>esfhg784r47r623847r234y2</td>
-                          <td>4,500</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>esfhg784r47r623847r234y2</td>
-                          <td>4,500</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>esfhg784r47r623847r234y2</td>
-                          <td>4,500</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>esfhg784r47r623847r234y2</td>
-                          <td>4,500</td>
-                        </tr>
+                        <%# } %> -->
                         <tr>
                           <td>1</td>
                           <td>esfhg784r47r623847r234y2</td>
@@ -377,7 +131,7 @@
                     </table>
                   </div>
                   <div class="dataTable-bottom d-flex justify-content-between">
-                    <div class="dataTable-info" id="dataTableInfo">1 to 10 entries</div>
+                    <div class="dataTable-info color-one" id="dataTableInfo">1 to 10 entries</div>
                     <div class="dataTable-pagination">
                       <ul class="pagination">
                         <!-- Pagination links are generated dynamically -->
@@ -396,10 +150,10 @@
                       
                         <div class="tab-pane fade" id="dark" role="tabpanel" aria-labelledby="dark-tab">
 
-                          <div class="container">
+                          <div class="">
                 <div class="">
-                  <div class="card-body">
-                    <table class="table mb-0" id="dataTable">
+                  <div class="table-responsive">
+                    <table class="table table-responsive mb-0" id="dataTable">
                       <thead>
                         <tr>
                           <th scope="col">SN</th>
@@ -421,121 +175,13 @@
                           <td>1</td>
                           <td>esfhg784r47r623847r234y2</td>
                           <td>4,500</td>
+                          <td>sdff43f78wfyw</td>
                         </tr>
                         <tr>
                           <td>1</td>
                           <td>esfhg784r47r623847r234y2</td>
                           <td>4,500</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>esfhg784r47r623847r234y2</td>
-                          <td>4,500</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>esfhg784r47r623847r234y2</td>
-                          <td>4,500</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>esfhg784r47r623847r234y2</td>
-                          <td>4,500</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>esfhg784r47r623847r234y2</td>
-                          <td>4,500</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>esfhg784r47r623847r234y2</td>
-                          <td>4,500</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>esfhg784r47r623847r234y2</td>
-                          <td>4,500</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>esfhg784r47r623847r234y2</td>
-                          <td>4,500</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>esfhg784r47r623847r234y2</td>
-                          <td>4,500</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>esfhg784r47r623847r234y2</td>
-                          <td>4,500</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>esfhg784r47r623847r234y2</td>
-                          <td>4,500</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>esfhg784r47r623847r234y2</td>
-                          <td>4,500</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>esfhg784r47r623847r234y2</td>
-                          <td>4,500</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>esfhg784r47r623847r234y2</td>
-                          <td>4,500</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>esfhg784r47r623847r234y2</td>
-                          <td>4,500</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>esfhg784r47r623847r234y2</td>
-                          <td>4,500</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>esfhg784r47r623847r234y2</td>
-                          <td>4,500</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>esfhg784r47r623847r234y2</td>
-                          <td>4,500</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>esfhg784r47r623847r234y2</td>
-                          <td>4,500</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>esfhg784r47r623847r234y2</td>
-                          <td>4,500</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>esfhg784r47r623847r234y2</td>
-                          <td>4,500</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>esfhg784r47r623847r234y2</td>
-                          <td>4,500</td>
-                        </tr>
-                        <tr>
-                          <td>1</td>
-                          <td>esfhg784r47r623847r234y2</td>
-                          <td>4,500</td>
+                          <td>sejfg478fy478f</td>
                         </tr>
                       </tbody>
                     </table>
@@ -555,63 +201,27 @@
             <!-- flex-right inner-left ends -->
 
             <!-- flex-right inner-right -->
-            <div class="col-12 col-md-4 shadow dark-div quarter" style="border-radius: 8px; margin-top: 15px;">
-                <div class="container mt-3">
-                  <div class="row g-3">
-                    <div class="col-4 col-sm-4 col-lg-4">
-                      <a href="#" class="feature-card mx-auto text-center">
-                        <div class="card mx-auto bg-gray">
-                          <img src="img/gift.png" alt="">
-                        </div>
-                        <p class="mb-0">Generate Availables</p>
-                      </a>
-                    </div>
-        
-                     <div class="col-4 col-sm-4 col-lg-4">
-                      <a href="#admins" class="feature-card mx-auto text-center">
-                        <div class="card mx-auto bg-gray">
-                          <img src="img/transfer.png" alt="">
-                        </div>
-                        <p class="mb-0">Remit Funds</p>
-                      </a>
-                    </div>
-                    
-                     <div class="col-4 col-sm-4 col-lg-4">
-                      <a href="#" class="feature-card mx-auto text-center">
-                        <div class="card mx-auto bg-gray">
-                          <img src="img/export.png" alt="">
-                        </div>
-                        <p class="mb-0">Export Active</p>
-                      </a>
-                    </div>
-                    
-                  </div>
-                </div><br>
-
+            <div class="col-12 col-md-4 shadow bg-gray quarter" style="border-radius: 8px; margin-top: 15px;">
                 <div class="top-products-area" style="margin: auto;">
                   <div class="container">
                     <div class="row g-3">
             
                       <!-- Single Top Product Card -->
                       <div class="col-6 col-sm-4 col-lg-6">
-                        <div class=" single-product-card primary" style="border-radius: 8px;">
+                        <div class=" single-product-card btn-color" style="border-radius: 8px;">
                           <div class="card-body p-0">
-                            <!-- Product Title -->
-                            <h5 class="product-title d-block text-truncate">Active Codes</h5>
-                            <!-- Product Price -->
-                            <p class="sale-price">49</p>
+                            <h5 class="product-title d-block text-white">Active Codes</h5>
+                            <p class="sale-price text-white">49</p>
                           </div>
                         </div>
                       </div>
             
                        <!-- Single Top Product Card -->
                       <div class="col-6 col-sm-4 col-lg-6">
-                        <div class=" single-product-card primary" style="border-radius: 8px;">
+                        <div class=" single-product-card btn-color" style="border-radius: 8px;">
                           <div class="card-body p-0">
-                            <!-- Product Title -->
-                            <h5 class="product-title d-block text-truncate">Used Codes</h5>
-                            <!-- Product Price -->
-                            <p class="sale-price">551</p>
+                            <h5 class="product-title d-block text-white">Used Codes</h5>
+                            <p class="sale-price text-white">551</p>
                           </div>
                         </div>
                       </div>
@@ -663,10 +273,75 @@
         </div>
     </div>
 </div>
+
+
+<div class="offcanvas offcanvas-bottom bg-one" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Vendor Dashbaord</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="bottom-nav">
+      <ul>
+        <li class="active-item mb-3">
+          <a href="Vendors Dashbaord.html"><ion-icon name="people-outline"></ion-icon><span>Vendor Dashboard</span></a>
+        </li>
+        <li class="active-item mb-3">
+          <a href="VTU History.html"><ion-icon name="phone-portrait-outline"></ion-icon><span>VTU History</span></a>
+        </li>
+        <li class="active-item mb-3">
+          <a href="P2P Registration.html"><ion-icon name="person-add-outline"></ion-icon><span>P2P Registration</span></a>
+        </li>
+        <li class="active-item mb-3">
+          <a href="Upload Porduct.html"><ion-icon name="cart-outline"></ion-icon><span>Upload Product</span></a>
+        </li>
+        <li class="active-item mb-3">
+          <a href="Donlines.html"><ion-icon name="people-outline"></ion-icon><span>Downlines</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<footer class="shadow dashboard-footer">
+  <div class="d-flex py-2 align-items-center justify-content-around bg-two content">
+    <a href="Dashboard.html">
+      <div class="d-flex flex-column align-items-center">
+          <ion-icon name="home"></ion-icon>
+          <small>Dashboard</small>
+      </div>
+    </a>
+    <a href="Withdrwals history.html">
+      <div class="d-flex flex-column align-items-center">
+          <ion-icon name="time-outline"></ion-icon>
+          <small>History</small>
+      </div>
+    </a>
+    <a href="Submit Withdrawal.html">
+      <div class="d-flex flex-column align-items-center">
+          <ion-icon name="card-outline"></ion-icon>
+          <small>Withdraw</small>
+      </div>
+    </a>
+    <button class="btn-more" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+      <div class="d-flex flex-column align-items-center">
+          <ion-icon name="ellipsis-horizontal"></ion-icon>
+          <small>More</small>
+      </div>
+    </button>
+  </div>
+</footer>
   
 
 
 <script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 <script>
   document.addEventListener('DOMContentLoaded', function () {
   // Number of items per page
