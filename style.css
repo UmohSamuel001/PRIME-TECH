@@ -118,15 +118,10 @@ kbd {
 input, select {
   border-radius: 15px !important;
 }
-input, button[type=submit] {
+input, button[type=submit], .dataTable-top select {
   height: 45px !important;
 }
 
-
-
-/* .thead th {
-  color: #07DE0A !important;
-} */
 
 .form-control,
 .form-select {
