@@ -44,42 +44,31 @@
       <div class="overall-div center-div">
         <div class="container mt-3">
     
-          <div class="card user-data-card shadow bg-gray mt-4">
+          <div class="card-width user-data-card mt-4">
             <div class="card-body p-4">
               
               <form action="#" method="post">
                 <div class="row g-3">
 
-                  <div class="col-md-12 mb-2">
-                    <div class="form-floating">
-                      <input type="text" class="form-control bg-three" name="username" placeholder="bank" autocomplete="off" readonly>
-                      <label>First Name</label>
-                    </div>
+                  
+                  <div class="form-group text-start mb-1 position-relative">
+                    <input class="form-control py-2" type="text" autocomplete="off" name="bank" placeholder="bank" value="" required="">
                   </div>
-      
-                  <div class="col-md-12 mb-2">
-                    <div class="form-floating">
-                      <input class="form-control bg-three" id="account_name" type="text" placeholder="account name" name="account_name" readonly>
-                      <label>Last Name</label>
-                    </div>
+    
+                  <div class="form-group text-start mb-1 position-relative">
+                    <input class="form-control py-2" type="text" autocomplete="off" name="account_name" placeholder="account name" value="" required="">
+                  </div>
+                
+                  <div class="form-group text-start mb-1 position-relative">
+                    <input class="form-control py-2" type="text" autocomplete="off" name="account_number" placeholder="account number" value="" required="">
                   </div>
                   
-                  <div class="col-md-12 mb-2">
-                    <div class="form-floating">
-                      <input class="form-control bg-three" id="account_number" type="text" placeholder="account number" name="account_number" readonly>
-                      <label>Account Number</label>
-                    </div>
-                  </div>
-
-                  <div class="col-md-12 mb-2">
-                    <div class="form-floating">
-                      <input class="form-control bg-three" id="account_number" type="text" placeholder="pin" name="pin">
-                      <label>Withdrawal Pin</label>
-                    </div>
+                  <div class="form-group text-start mb-1 position-relative">
+                    <input class="form-control py-2" type="text" autocomplete="off" name="withdrawal_pin" placeholder="withdrawal pin" value="" required="">
                   </div>
 
                   <div class="col-md-12">
-                    <button class="btn btn-color w-100 text-white" type="submit">Update Now</button>
+                    <button class="btn btn-color w-100 text-white radius-two shadow" type="submit">Update Now</button>
                   </div>
 
                 </div>
