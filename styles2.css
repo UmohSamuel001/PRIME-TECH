@@ -166,6 +166,7 @@ li {
   right:20px;
   bottom:50px;
   z-index:10;
+  display: none;
   color:#fff;
   border:0;
   border-radius:50%;
@@ -196,6 +197,9 @@ li {
   padding: 8px;
   border-bottom: 1px solid rgb(203, 203, 203);
   display: block;
+}
+.mobile-menu-wrapper ul li a {
+  color: rgb(21, 21, 21) !important;
 }
 .rank {
   position: absolute;
