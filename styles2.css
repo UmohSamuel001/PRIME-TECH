@@ -102,15 +102,15 @@ li {
   /* backdrop-filter: blur(18px) !important; */
 }
 .hangover {
-  background-image: url(img/img1\ \(1\).jpeg);
+  background-image: url(img/img4.jfif);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
   place-content: center;
   text-align: center;
-  height: 400px;
-  width: 40%;
+  height: 480px;
+  width: 35%;
   position: absolute;
   top: 0;
   right: 0;
@@ -129,6 +129,7 @@ li {
 .mockup {
   scale: 0.6;
   margin-top: 200px;
+  margin-left: -400px;
 }
 .mockup-sm {
   scale: 0.8;
@@ -156,4 +157,49 @@ li {
 .underline {
   text-decoration: underline;
   text-decoration-color: #07DE0A;
+}
+.scrolltop-btn{
+  width:45px;
+  height:45px;
+  background-color: #00CF00;
+  position:fixed;
+  right:20px;
+  bottom:50px;
+  z-index:10;
+  color:#fff;
+  border:0;
+  border-radius:50%;
+}
+.vendor {
+  width: fit-content;
+}
+.vendor img {
+  width: 60px;
+  height: 60px;
+}
+.ab-white {
+  width: 200px;
+  box-shadow: -3px 5px 2px 3px rgba(0, 0, 0, 0.349);
+  margin-left: -350px;
+}
+.ab-white p {
+  line-height: 18px;
+}
+.mobile-menu-toggle {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+}
+.mobile-menu-wrapper ul li {
+  /* margin-top: 10px; */
+  padding: 8px;
+  border-bottom: 1px solid rgb(203, 203, 203);
+  display: block;
+}
+.rank {
+  position: absolute;
+  scale: 0.7;
+  right: 0;
+  top: 0;
 }

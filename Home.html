@@ -9,6 +9,39 @@
     <script src="https://kit.fontawesome.com/a207e207d8.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+    <button class="scrolltop-btn"><i class="fa-solid fa-angle-up"></i></button>
+      
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5> -->
+
+          <div class="d-flex align-items-center justify-content-center">
+            <a href="Home.html" class="logo-wrapper"><img src="img/logo (3).png" style="height: 70px; width: 80px;" alt="logo" class="logo logo-black"></a>
+            <p class="fw-bold position-relative mt-3" style="color: #07DE0A;">PRIME-TECH</p>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+                
+                <nav class="mobile-menu-wrapper w-100 mt-15">
+                    <ul>
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="Terms.html">About Prime-tech</a></li>
+                        <li><a href="Buy Coupon Code.html">Buy Coupon</a></li>
+                        <li><a href="Top Earners.html">Top Earners</a></li>
+                        <li><a href="Verify Coupon Code.html">Verify Coupon</a></li>
+                        <li><a href="#">Prime-tech Posts</a></li>
+                        <li><a href="Terms.html">Terms</a></li>
+                        <li><a href="Policy.html">Policy</a></li>
+                        <li><a href="Login.html">Login</a></li>
+                        <li><a href="Register.html">Register</a></li>
+                    </ul>
+                </nav>
+        </div>
+      </div>
+
+    
     <header class="sticky-top" id="header">
         <div class="container">
             <div class="row align-items-center navbar">
@@ -31,9 +64,9 @@
                             <a href="Register.html" class="btn btn-color text-white fw-bold radius-two btn-small">Register </a>
                         </div>
                         <div class="ml-20 flex-shrink-0 position-relative d-none d-sm-block">
-                            <a href="Login.html" class="btn fw-bold radius-two btn-small">Login</a>
+                            <a href="Login.html" class="btn fw-bold text-dark radius-two btn-small">Login</a>
                         </div>
-                        <button class="mobile-menu-toggle d-block d-lg-none border rounded-circle p-2 bg-white"><i class="fa-solid fa-bars text-dark"></i></button>
+                        <button class="mobile-menu-toggle d-block d-lg-none border rounded-circle p-2 bg-white" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"><i class="fa-solid fa-bars text-dark"></i></button>
                     </div>
                 </div>
             </div>
@@ -45,20 +78,15 @@
             <div class="row align-items-center justify-content-between" style="height: auto !important;">
                 <div class="col-xxl-5 col-lg-6 col-md-9" style="height: auto !important;">
                     <div class="hm-affiliate-hero-left">
-                        <!-- <p class="fw-bold lead position-relative" style="color: #07DE0A;">PRIME-TECH</p> -->
-                        <h1 class="display-5 fw-semibold text-dark fw-bold mb-3">Road To Financial Freedom</h1>
-                        <p class="color-one" style="font-size: 17px;">Welcome to Prime-tech, your thriving hub for affiliate success! Dive into a world where every small task becomes a rewarding opportunity. At Prime-tech, we've transformed business into prosperity. Our platform buzzes with activity as individuals like you engage in quick and fulfilling tasks that lead to tangible earnings.</p>
+                        <p class="fw-bold" style="color: #07DE0A; margin-bottom: px;">PRIME-TECH</p>
+                        <h1 class="display-5 fw-semibold text-dark fw-bold mb-3">Road To <span class="underline">Financial</span> Freedom</h1>
+                        <p class="color-" style="font-size: 17px;">Welcome to Prime-tech, your thriving hub for affiliate success! Dive into a world where every small task becomes a rewarding opportunity. At Prime-tech, we've transformed business into prosperity. Our platform buzzes with activity as individuals like you engage in quick and fulfilling tasks that lead to tangible earnings.</p>
                         <a href="Register.html" class="btn btn-color text-white fw-bold mt-2 px-4 py-3 radius-two">Register</a>
                     </div>
                 </div>
                 <div class="hangover lg">
                     <img src="img/iPhone-12-Mini-.png" alt="mockup" class="mockup">
                 </div>
-                <!-- <div class="col-lg-6 col-md-9">
-                    <div class="hm-affiliate-hero-right">
-                        <img src="img/123-light.jpeg" alt="hero shape" class="img-fluid">
-                    </div>
-                </div> -->
             </div>
         </div>
     </div>
@@ -254,7 +282,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="">
                             <a href="/" class="footer-logo"><img src="img/logo (3).png" style="height: 100px; width: 100px;" class="logo" alt="logo"></a>
-                            <p class="color-one mt-30">Join the Prime-tech community and unlock a world of earning possibilities. Engage in diverse tasks, build your affiliate network, and transform your time into valuable rewards. Connect with us today and embark on your journey towards prosperity.</p>
+                            <p class="color- mt-30">Join the Prime-tech community and unlock a world of earning possibilities. Engage in diverse tasks, build your affiliate network, and transform your time into valuable rewards. Connect with us today and embark on your journey towards prosperity.</p>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-6">
@@ -297,7 +325,7 @@
                 </div> -->
             </div>
         </div>
-    </footer> 
+    </footer>
 
     
     
